@@ -1,5 +1,7 @@
 package SequentialStructure;
 
+import java.util.Locale;
+
 public class sequentialSTructure {
 
 	public static void main(String[] args) {
@@ -106,7 +108,50 @@ public class sequentialSTructure {
 		System.out.println();
 		System.out.printf("Record: %d years old, code %d and gender: %s%n", age3, code, gender);
 		System.out.printf("Measue with eight decimal places: %f", measure);
-		System.out.printf("Rouded (three  decimal places): %.3f", measure);
+		System.out.printf("Rouded (three  decimal places): %.3f%n", measure);
+		Locale.setDefault(Locale.US);
+		System.out.printf("US decimal point: %.3f%n", measure);
+		
+		/* Importing classes = CTRL + SHIFT + O
+		 * Autoendentation = CTRL + SHIFT + F
+		 
+		  Data processing, Casting
+		  attribution comand
+		  
+		  Sintaxe:
+		  <variable> = <expression> "=" == receive
+		 */
+		
+		int x, y;
+		x = 5;
+		y = 2 * x;
+		
+		System.out.println(x);
+		System.out.println(y);
+		
+		double b, B, h, area;
+		b = 6.0;
+		B = 8.0;
+		h = 5.0;
+		
+		area = (b + B) / 2.0 * h;
+		
+		System.out.println(area);
+		
+		/*Casting
+		 * 
+		 * Its the conversion of a data type in other type
+		 * */
+		
+		int w, n;
+		double resultado;
+		
+		w = 5;
+		n = 2;
+		
+		resultado = (double) w / n;
+		
+		System.out.println(resultado);
 	}
 
 }
