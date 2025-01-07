@@ -66,8 +66,47 @@ public class sequentialSTructure {
 		 * Can't start with digit
 		 * Can't have a blank space
 		 * Can't have accent
-		 * Use camelCase*/
+		 * Use camelCase
+		 * 
+		 * 3 basics progamming operation
+		 * Data Input -> Data Processing -> Data Output
+		 * INPUT = read
+		 * Processing = calc
+		 * Output = write (System.out.println())
+		 * 
+		 * Floating variable are writed = System.out.println("%.2f%n", x);
+		 * Concatenate elements = el1 + el2 + el3
+		 * Concatenate multi types on one comand line = ("txt01 %f txt2 %f txt3", var1, var2) -> %f float point
+		*/
+		
+		System.out.println("Output");
+		double var1 = 10.3;
+		double var2 = 23.4;
+		System.out.printf("Var1 is %.2f and Var2 is %.2f %n", var1, var2);
+		
+		int age2 = 34;
+		String name = "Pedro";
+		double salary = 3500.0;
+		System.out.printf("My name is %s, i have %d years old and my salary is %.2f%n", name, age2, salary);
 
+		String product1 = "Computer";
+		String product2 = "Office desk";
+		
+		int age3 = 30;
+		int code = 5290;
+		char gender = 'F';
+		
+		double price1 = 2100.0;
+		double price2 = 650.0;
+		double measure = 53.234567;
+		
+		System.out.println("Products:");
+		System.out.printf("%s, which price is %.2f%n", product1, price1);
+		System.out.printf("%s, which price is %.2f%n", product2, price2);
+		System.out.println();
+		System.out.printf("Record: %d years old, code %d and gender: %s%n", age3, code, gender);
+		System.out.printf("Measue with eight decimal places: %f", measure);
+		System.out.printf("Rouded (three  decimal places): %.3f", measure);
 	}
 
 }
