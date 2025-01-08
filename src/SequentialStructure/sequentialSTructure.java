@@ -233,7 +233,7 @@ public class sequentialSTructure {
 		 x2 = (-b1 - Math.sqrt(delta)) / (2.0 * a1);
 		 System.out.println(x1);
 		 System.out.println(x2);
-		 
+		
 	}
 
 }
