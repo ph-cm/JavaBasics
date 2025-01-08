@@ -1,6 +1,7 @@
 package SequentialStructure;
 
 import java.util.Locale;
+import java.util.Scanner;
 
 public class sequentialSTructure {
 
@@ -152,6 +153,87 @@ public class sequentialSTructure {
 		resultado = (double) w / n;
 		
 		System.out.println(resultado);
+		
+		/* Input data
+		 * 
+		 * Scanner: create an object that is a "Scanner" type:
+		 * 
+		 * Scanner sc = new Scanner(System.in); -> import jaav.util.Scanner;
+		 * 										-> do it sc.close() when stop using it
+		 * 
+		 */
+		Scanner sc = new Scanner(System.in);
+		 String p;
+		 int c;
+		 double v;
+		 char g;
+
+		 //p = sc.next(); //read text 
+		 //c = sc.nextInt(); // read integers
+		 //v = sc.nextDouble(); // read double
+		 //g = sc.next().charAt(0); // read char
+		 
+		 String s1, s2, s3;
+		 System.out.println("Choose 3 words:");
+		 s1 = sc.nextLine();
+		 s2 = sc.nextLine();
+		 s3 = sc.nextLine();
+		 
+		 System.out.println("DADOS DIGITADOS: ");
+		 System.out.println(s1);
+		 System.out.println(s2);
+		 System.out.println(s3);
+		 
+		 sc.close();
+		 
+		 /*Math Function
+ *
+ * --------------------------------------------------------------------------
+ * | Example              | Meaning                                         |
+ * --------------------------------------------------------------------------
+ * | A = Math.sqrt(x);    | Variable A receives the square root of x        |
+ * | A = Math.pow(x, y);  | Variable A receives the result of x raised to y |
+ * | A = Math.abs(x);     | Variable A receives the absolute value of x     |
+ * --------------------------------------------------------------------------
+*/
+		 double v1 = 3.0;
+		 double v2 = 4.0;
+		 double v3 = -5.0;
+		 double A, K, C;
+		 
+		 A = Math.sqrt(v1);
+		 K = Math.sqrt(v2);
+		 C = Math.sqrt(v3);
+		 System.out.println(A);
+		 System.out.println(K);
+		 System.out.println(C);
+		 
+		 A = Math.pow(v1, v2);
+		 K = Math.pow(v1, 2.0);
+		 C = Math.pow(5.0, 2.0);
+		 System.out.println(A);
+		 System.out.println(K);
+		 System.out.println(C);
+		 
+		 A = Math.abs(v2);
+		 K = Math.abs(v3);
+		 System.out.println(A);
+		 System.out.println(K);
+		 
+		 //Baskara
+		 double b1, a1, c1, x1, x2, delta;
+		 
+		 a1 = 2.0;
+		 b1 = 9.0;
+		 c1 = 3.0;
+		 
+		 delta = Math.pow(b1, 2.0) - (4 * a1 * c1);
+		 
+		 x1 = (-b1 + Math.sqrt(delta)) / (2.0 * a1);
+		 x2 = (-b1 - Math.sqrt(delta)) / (2.0 * a1);
+		 System.out.println(x1);
+		 System.out.println(x2);
+		 
 	}
 
 }
